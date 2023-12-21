@@ -1,0 +1,219 @@
+body {
+    background-color: grey;
+    overflow-x: hidden;
+    font-family: "Helvetica";
+}
+
+.button {
+    background: transparent;
+    border: 0px;
+    border-style: solid;
+    transition: opacity 1s;
+    border-radius: 36px;
+    cursor: pointer;
+    transition: transform 1s , opacity 1s;
+    left: 2%;
+    position: relative;
+    transform: scale(1.10);
+}
+
+.button:hover{
+    opacity: 0.30; 
+    transform: scale(1.15);
+}
+
+.button1 {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: opacity 1s;
+}
+
+.button1:hover{
+    opacity: 0.30; 
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link, a:visited, a:hover, a:active {
+    color: black;
+} 
+
+.Yousef-picture {
+    background-image: url('WhatsApp Image 2023-11-18 at 21.15.28_eba4cfd4-modified.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 500px;
+    animation: mymove 5s infinite;
+}
+
+#Yousef-picture {animation-timing-function: ease-in-out;}
+
+@keyframes mymove {
+    0% {
+        left: 0px;
+    }
+    50% {
+        left: 1200px;
+    }
+    100% {
+        left: 0px;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+    
+.Log_in_text {
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+    z-index: 2000;
+    font-size: 5.3ex;
+    top: 23%;
+    left: 23%;
+    position: absolute; 
+    z-index: 999;
+ }
+ 
+ .password-text {
+     color: white;
+     font-size: 5.3ex;
+     position: absolute;
+     top: 40%;
+     left: 40%;
+     z-index: 999;
+ }
+ 
+ .password {
+     position: absolute;
+     border-style: solid;
+     border: 2px #000;
+     border-radius: 36px;
+     background-color: transparent;
+     height: 45px;
+     width: 300px;
+     font-size: 5.3ex;
+     top: 52%;
+     left: 40%;
+     z-index: 999;
+ }
+
+ input:focus, textarea:focus, select:focus {
+    outline: none;
+    border: 2px solid #000; /* Change the color to your preference */    
+}
+
+
+ .Submit {
+     width: 152px;
+     height: 26px;
+     position: absolute;
+     top: 60%;
+     left: 40%;
+     font-size: 5.3ex;
+     background: none;
+     border: none;
+     color: white;
+     cursor: pointer;
+     z-index: 999;
+ }
+
+ .background {
+    background-color: rgb(82, 123, 170);
+    position: fixed;
+    width: 40000px;
+    height: 100px;
+    top: -25px;
+    left: -20px;
+    z-index: 999;
+    transition: opacity 1s;
+    cursor: auto;
+ }
+
+.hidden {
+    width: 40000px;
+    height: 100px;
+    background-color: grey;
+}
+
+ .top {
+    position: fixed;
+    top: 0;
+    right: 0; /* Adjust as needed */
+    margin: 0;
+    width: 100%;
+    z-index: 999;
+    border-radius: 0;
+    cursor: pointer;
+    background-color: rgb(82, 123, 170);
+    transition: opacity 1s;
+    padding: 10px; /* Adjust as needed */
+    box-sizing: border-box;
+}
+
+.top1, .top2, .top3, .top4, .top5, .top6, .top7, .top8 {
+    transition: opacity 1s , color 1s;
+    cursor: pointer;
+    border-color: rgb(82, 123, 170); 
+    background-color: rgb(82, 123, 170); 
+    color: white; 
+    font-size: 5.3ex; 
+    border-style: solid;
+}
+
+.top1::selection, .top2::selection, .top3::selection, .top4::selection, .top5::selection, .top6::selection, .top7::selection, .top8::selection {
+    background-color: transparent;
+}
+
+.top1:hover, .top2:hover, .top3:hover, .top4:hover, .top5:hover, .top6:hover, .top7:hover, .top8:hover {
+    opacity: 0.15;
+    color: #000;
+}
+
+.background12 {
+    opacity: 0.30;
+    width: 500px;
+    height: 470px;
+    border-radius: 36px;    
+    background-image: url("cropped-1920-1080-1341416.png");
+    position: absolute;
+    top: 22%;
+    left: 35%;
+    border: 2px solid #fff;
+    cursor: auto;
+}
+
+.show_password {
+    background: transparent;
+    border: none;
+    top: 53%;
+    left: 55%;
+    position: absolute;
+    cursor: pointer;
+    z-index: 1000;
+    font-size: 3ex;
+}
+
+.show_password::selection {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    scroll-behavior: smooth;
+}
+
+#log_in {
+    transition: all 0.5s;
+}
